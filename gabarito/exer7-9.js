@@ -151,5 +151,5 @@ robinHood(salarios)
 
 const turma= [["Heitor", 10],["Weiwei", 10], ["Gojo", 10]]
 for(let e of turma){
-    console.log(e)
+    console.log(`Nome:${e[0]} Nota:${e[1]}`)
 }
