@@ -65,7 +65,7 @@ tabuada(2)
 // Use for (let amigo of amigos) — a variável amigo vai receber cada nome automaticamente
 // Dentro do loop, imprima usando template literal com a mensagem: ´Meus amigos são ${amigo}´
 
-const amigos = ["geto,,sukuna,gojo"]
+const amigos = ["geto","sukuna","gojo"]
 for(let amigo of amigos){
     console.log(`Meus amigos são ${amigo}`)
 
@@ -83,6 +83,6 @@ for(let amigo of amigos){
 
 const fila = ["Itadori","Megumi","Nobara"]
 fila.push("Yuta")
-fila.unshift("Gojo") // gojo atendido primeiro por esta pela metade
+fila.unshift("Gojo") // gojo atendido primeiro por estar pela metade
 fila.shift()
 console.log(fila,fila.length)
