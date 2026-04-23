@@ -86,3 +86,70 @@ fila.push("Yuta")
 fila.unshift("Gojo") // gojo atendido primeiro por estar pela metade
 fila.shift()
 console.log(fila,fila.length)
+
+// Exercício 6 — Dividindo Times com slice()
+
+// O que fazer: Você tem um array com 6 jogadores. Divida em dois times de 3 usando slice().
+
+// Passo a passo:
+
+// Crie const jogadores com 6 nomes
+// slice(0, 3) pega do índice 0 até o 2 (não inclui o 3) — Time A
+// slice(3) pega do índice 3 até o final — Time B
+// Imprima os dois times
+
+const jogadores= ["Regoko", "Uzui", "Tomioka", "Shinobu", "Mitsuri", "Obanai",]
+
+let timeA= jogadores.slice(0,3)
+let timeB= jogadores.slice(3)
+console.log(`timeA vs timeB \n TimeA: ${timeA} \n TimeB: ${timeB}`)
+
+// Exercício 7 — Substituindo Jogador com splice()
+ 
+// O que fazer: Um jogador se machucou! Use splice() para substituí-lo no array.
+
+// Passo a passo:
+// Use o timeA do exercício anterior
+// splice(início, quantidadeRemovida, novoElemento)
+// Para substituir o índice 1 ("Ana"), use splice(1, 1, "Juliana") — remove 1 elemento na posição 1 e coloca "Juliana"
+// Imprima o time atualizado
+
+timeA.splice(2,1,"Sanemi")
+console.log(timeA)
+
+// Exercício 8 — Robin Hood com Arrow Function
+//  O que fazer: Recrie a função Robin Hood, mas agora ela recebe um array de salários e classifica cada um.
+
+
+// Passo a passo:
+// Crie um array salarios com alguns valores
+// Crie uma arrow function robinHood que recebe um salário e usa ternário para classificar
+// Use for of para percorrer o array e chamar robinHood para cada salário
+// Imprima o resultado com template literal
+
+const salarios= [500000, 2000, 7000, 100000]
+const robinHood= (s)=> {
+    for(let e of s){
+        if(e>=50000){
+            console.log(`${e} perdeu para o robirHood`)
+        }
+    }
+}
+robinHood(salarios)
+
+// Exercício 9 — Matriz de Notas (Array 2D)
+//  O que fazer: Crie uma matriz onde cada linha é um aluno com nome e nota. Percorra e mostre se passou.
+
+
+//  Passo a passo:
+
+// Crie const turma como uma matriz — array de arrays
+// Cada elemento interno tem [nome, nota]
+// Use for of para percorrer — cada aluno vai ser um array ["Nome", nota]
+// Acesse aluno[0] para o nome e aluno[1] para a nota
+// Use ternário para dizer se foi aprovado ou reprovado
+
+const turma= [["Heitor", 10],["Weiwei", 10], ["Gojo", 10]]
+for(let e of turma){
+    console.log(e)
+}
