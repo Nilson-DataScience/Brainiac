@@ -9,7 +9,7 @@
 **→ No explorador no lado direito** ou no nome `quatro-vidas-de-um-cachorro` tem um menu de criação:
 
 ```
- [ + ]        [ 📁+ ]       [ ↺ ]
+ [ 📄 ]        [ 📁 ]       [ ↺ ]
 Novo          Nova          Atualizar
 Arquivo       Pasta         Explorador
 ```

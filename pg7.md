@@ -35,5 +35,4 @@
 
 
 **4.** Qual tag para imagem?
-> `<img src="" alt="">`
-
+> `<img src="">`

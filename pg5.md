@@ -11,7 +11,7 @@ Simples, ocorre por meio das *tags*.
 
 Refere-se ao uso de elementos que possuem significado claro e descritivo, tanto para navegadores e máquinas de busca.
 
-> 💡 **Complemento:** A semântica HTML também é fundamental para **acessibilidade**, ajudando leitores de tela a interpretar corretamente o conteúdo da página.
+
 
 ### Elementos semânticos:
 
