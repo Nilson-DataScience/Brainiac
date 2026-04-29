@@ -153,3 +153,38 @@ const turma= [["Heitor", 10],["Weiwei", 10], ["Gojo", 10]]
 for(let e of turma){
     console.log(`Nome:${e[0]} Nota:${e[1]}`)
 }
+
+//10
+
+const cozinharCebola = (quantCebola, acucar=false)=> {
+    let frigideira = []
+    let min = 5
+    while(min>0){
+        console.log("Refogando")
+        min--
+      if(min<=0){
+         frigideira.push("Cebola")
+         console.log("Cebola está refogada")
+      }
+    };
+  frigideira.push("Manteiga")
+  let velocidade = 40
+  if(acucar === true){
+    frigideira.push("Açucar")
+    velocidade = 20
+  }
+  let troca = false
+  while(min < velocidade){
+    min ++  
+    if(troca === false){
+        let temp = frigideira[0]
+    frigideira[0]= frigideira[1]
+    frigideira[1] = temp
+      troca = true
+    }
+    console.log("Está Caramelizando a cebola"," Mistura:",frigideira)
+  }
+  
+}
+
+cozinharCebola(1000,true)
